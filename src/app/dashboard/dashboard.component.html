@@ -1,0 +1,42 @@
+<app-fruit-search></app-fruit-search>
+<div class="d-flex flex-column flex-wrap align-content-stretch">
+  <div *ngIf="fruitsService.fruits.length > 1; then thenBlock; else elseBlock">  </div>
+    <ng-template #thenBlock>
+      <div
+        *ngFor="let fruit of fruitsService.fruits"
+        class="container align-self-start"
+        (click)="fruitsService.showDetails(fruit.name)"
+      >
+        <h2>{{ fruit.name }}</h2>
+
+        <div id="{{ fruit.name }}-details" class="hidden">
+          <h4>nutritions</h4>
+          carbohydrates: {{ fruit.nutritions.carbohydrates }}<br />
+          protein: {{ fruit.nutritions.protein }}<br />
+          fat: {{ fruit.nutritions.fat }}<br />
+          calories: {{ fruit.nutritions.calories }}<br />
+          sugar: {{ fruit.nutritions.sugar }}<br />
+        </div>
+      </div>
+    </ng-template>
+
+    <ng-template #elseBlock>
+      <div
+        class="container align-self-start"
+        (click)="fruitsService.showDetails(fruitsService.fruits.name)"
+      >
+        <h2>{{ fruitsService.fruits.name }}</h2>
+
+        <div id="{{ fruitsService.fruits.name }}-details" class="hidden">
+          <h4>nutritions</h4>
+          carbohydrates: {{ fruitsService.fruits.nutritions.carbohydrates
+          }}<br />
+          protein: {{ fruitsService.fruits.nutritions.protein }}<br />
+          fat: {{ fruitsService.fruits.nutritions.fat }}<br />
+          calories: {{ fruitsService.fruits.nutritions.calories }}<br />
+          sugar: {{ fruitsService.fruits.nutritions.sugar }}<br />
+        </div>
+      </div>
+    </ng-template>
+
+</div>

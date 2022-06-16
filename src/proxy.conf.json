@@ -1,0 +1,15 @@
+
+{
+  "/api/fruit/": {
+    "target": "https://www.fruityvice.com",
+    "secure": true,
+    "changeOrigin":true,
+    "logLevel": "debug"
+  },
+  "/api/fruit/*": {
+    "target": "https://www.fruityvice.com",
+    "secure": true,
+    "changeOrigin":true,
+    "logLevel": "debug"
+  }
+}

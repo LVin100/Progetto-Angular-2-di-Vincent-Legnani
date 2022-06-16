@@ -74,12 +74,17 @@
               "browserTarget": "fruit-app:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "browserTarget": "fruit-app:build",
+            "proxyConfig": "src/proxy.conf.json"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "fruit-app:build"
+            "browserTarget": "fruit-app:build",
+            "proxyConfig": "src/proxy.conf.json"
           }
         },
         "test": {

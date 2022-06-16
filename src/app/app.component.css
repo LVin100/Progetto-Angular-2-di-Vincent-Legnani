@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html,body{
+  background-color: aquamarine;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+
+}
+html{
+  padding: 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
