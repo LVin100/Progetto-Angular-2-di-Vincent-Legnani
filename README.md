@@ -1,3 +1,8 @@
+Benvenuto nel mio secondo progetto su Angular!
+Troverai un'applicazione che farà una chiamata api al sito www.fruityvice.com mostrando un elenco di frutti. Cliccando sulla "card" del frutto si potranno visualizzare i dettagli dello stesso.
+
+
+
 # FruitApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
