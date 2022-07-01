@@ -23,9 +23,7 @@ export class FruitsService {
   }
 
   getUrl(fruitName: string){
-    return this.http.get(`/api/fruit/${fruitName}`)
-
-
+    return this.http.get(`api/fruit/${fruitName}`)
   }
   showDetails(nome: string){
     let fruit = document.getElementById(nome+"-details");
