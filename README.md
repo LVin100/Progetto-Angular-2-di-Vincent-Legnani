@@ -1,3 +1,6 @@
+installare l'npm install
+
+
 Benvenuto nel mio secondo progetto su Angular!
 Troverai un'applicazione che farà una chiamata api al sito www.fruityvice.com mostrando un elenco di frutti. Cliccando sulla "card" del frutto si potranno visualizzare i dettagli dello stesso.
 
